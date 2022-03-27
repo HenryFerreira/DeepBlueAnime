@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/DeepBlueAnime/static/css/main.e161e869.chunk.css",
+    "main.js": "/DeepBlueAnime/static/js/main.442e1152.chunk.js",
+    "main.js.map": "/DeepBlueAnime/static/js/main.442e1152.chunk.js.map",
+    "runtime-main.js": "/DeepBlueAnime/static/js/runtime-main.60c63b3d.js",
+    "runtime-main.js.map": "/DeepBlueAnime/static/js/runtime-main.60c63b3d.js.map",
+    "static/js/2.9cd7668c.chunk.js": "/DeepBlueAnime/static/js/2.9cd7668c.chunk.js",
+    "static/js/2.9cd7668c.chunk.js.map": "/DeepBlueAnime/static/js/2.9cd7668c.chunk.js.map",
+    "index.html": "/DeepBlueAnime/index.html",
+    "static/css/main.e161e869.chunk.css.map": "/DeepBlueAnime/static/css/main.e161e869.chunk.css.map",
+    "static/js/2.9cd7668c.chunk.js.LICENSE.txt": "/DeepBlueAnime/static/js/2.9cd7668c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.60c63b3d.js",
+    "static/js/2.9cd7668c.chunk.js",
+    "static/css/main.e161e869.chunk.css",
+    "static/js/main.442e1152.chunk.js"
+  ]
+}
