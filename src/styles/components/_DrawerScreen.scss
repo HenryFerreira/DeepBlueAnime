@@ -1,0 +1,225 @@
+//@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Press+Start+2P&display=swap');
+
+.navbar, .navbar-logo, .navbar-logo span{
+    font-family: 'Press Start 2P', cursive;
+}
+
+//Component DropDown
+.dropdown-menu {
+    background: red;
+    width: 200px;
+    position: absolute;
+    top: 80px;
+    list-style: none;
+    text-align: flex-start;
+    z-index: 3;
+}
+
+.dropdown-menu li {
+    background: $primaryColor;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background: #2f316b;
+}
+
+.dropdown-menu.clicked {
+    display: none;
+}
+
+.dropdown-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color:$text;
+    padding: 16px;
+}
+
+@media screen and (max-width: 960px) {
+    .fa-caret-down {
+    display: none;
+    }
+    .dropdown-menu {
+        font-size: 15px;
+        background: transparent;
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        top: 225px;
+        left: 0px;
+        list-style: none;
+        text-align: flex-start;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .dropdown-menu li{
+        display: flex;
+        flex-direction: row;
+        width: 25%;
+
+    }
+
+}
+
+//Component  DrawerScreen
+.navbar {
+    background: linear-gradient(90deg, rgb(32, 128, 201) 0%, rgb(28, 47, 121) 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    color: rgb(6, 12, 53);
+    justify-self: flex-start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.navbar-logo span {
+    color: $title;
+}
+
+.fa-firstdraft {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.nav-links {
+    color: $title;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+    
+    background-color: $primaryColor;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+    color: $title;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    color: $title;
+}
+
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+    position: relative;
+    }
+
+    .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 91.3vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+    background: #242222;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 3;
+    }
+
+    .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    }
+
+    .nav-links:hover {
+    background-color: $primaryColor;
+    border-radius: 0;
+    }
+
+    .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+    }
+
+    .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    }
+
+    .fa-times {
+    color: #fff;
+    font-size: 2rem;
+    }
+
+    .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: $primaryColor;
+    text-decoration: none;
+    color: $title;
+    font-size: 1.5rem;
+    }
+
+    .nav-links-mobile:hover {
+    background: $title;
+    color: $primaryColor;
+    transition: 250ms;
+    }
+
+    button {
+    display: none;
+    }
+}
